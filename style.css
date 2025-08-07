@@ -1,15 +1,31 @@
 body, main, div{
     font-family: 'Poppins', sans-serif;
     color: #e0e6ec;
+    background-color: transparent;
+}
+
+body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: transparent;
-}
-body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), 
-    rgba(128, 128, 128, 0.1)), url("images/image.jpeg");
+    rgba(128, 128, 128, 0.1)), url("./images/image.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 main h2{
     font-size: 50px;
 }
@@ -22,7 +38,8 @@ header{
     justify-content: center;
     align-items: center;
 }
-div{
+main div{
+    display: block;
     margin: 20px;
     background-color: #161e27;
     border-radius: 20px;
@@ -30,9 +47,8 @@ div{
     margin-left: 10%;
     margin-right: 10%;
     width: 80%;
-
     box-shadow: rgb(187, 187, 187) 3px 3px 1px;
-    
+    text-align: center;
 }
 img{
     border: 0.5px solid #C9D1D9;
